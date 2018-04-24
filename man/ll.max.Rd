@@ -36,4 +36,3 @@ ll.max(params,y,x,p_C,p_NC)
 Sean Telg
 }
 \keyword{optimization}
-

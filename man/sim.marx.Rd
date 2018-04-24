@@ -40,4 +40,3 @@ sim.marx(dist.eps,dist.x,obs,c_par,nc_par,exo_par) ## Simulates a MARX(2,1,1) pr
 Sean Telg
 }
 \keyword{simulation}
-

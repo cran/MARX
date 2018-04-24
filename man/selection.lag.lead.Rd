@@ -24,7 +24,7 @@ selection.lag.lead(y, x, p_pseudo)
 This function allows you to determine the MARX model (for p = r + s) that maximizes the t-log-likelihood.
 }
 \examples{
-data <- sim.marx(c('t',3,0), c('t',3,0),100,0.5,0.4,0.3)
+data <- sim.marx(c('t',3,1), c('t',3,1),100,0.5,0.4,0.3)
 selection.lag.lead(data$y,data$x,2)
 }
 \author{
@@ -32,4 +32,3 @@ Sean Telg
 }
 \keyword{causal-noncausal}
 \keyword{selection}
-

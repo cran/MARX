@@ -36,7 +36,7 @@ arx.ls(y, x, p)
 This function allows you to estimate ARX models by ordinary least squares (OLS).
 }
 \examples{
-data <- sim.marx(c('t',3,0),c('t',1,1),100,0.5,0.4,0.3)
+data <- sim.marx(c('t',3,1),c('t',1,1),100,0.5,0.4,0.3)
 arx.ls(data$y,data$x,2)
 }
 \author{
@@ -44,4 +44,3 @@ Sean Telg
 }
 \keyword{estimation}
 \keyword{pseudo-causal}
-

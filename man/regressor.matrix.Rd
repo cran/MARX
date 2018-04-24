@@ -20,11 +20,10 @@ regressor.matrix(y, x, p)
 This function allows you to create a regressor matrix.
 }
 \examples{
-data <- sim.marx(c('t',3,0),c('t',1,1),100,0.5,0.4,0.3)
+data <- sim.marx(c('t',3,1),c('t',1,1),100,0.5,0.4,0.3)
 regressor.matrix(data$y, data$x, 2)
 }
 \author{
 Sean Telg
 }
 \keyword{estimation}
-

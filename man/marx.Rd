@@ -25,6 +25,9 @@ The function returns the values of the information criteria for the pseudo-causa
 \description{
 This interface-based function allows you to perform model selection for MARX models based on information criteria.
 }
+\details{
+Mixed causal-noncausal autoregressions with exogenous regressors.
+}
 \examples{
 data <- sim.marx(c('t',1,1), c('t',1,1),100,0.5,0.4,0.3)
 p_max <- 8
@@ -37,4 +40,3 @@ Sean Telg
 }
 \keyword{estimation}
 \keyword{selection}
-

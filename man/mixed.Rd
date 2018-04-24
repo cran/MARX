@@ -2,7 +2,9 @@
 % Please edit documentation in R/MARX_functions.R
 \name{mixed}
 \alias{mixed}
-\alias{mixed.combine}
+\alias{mixed.default}
+\alias{print.mixed}
+\alias{summary.mixed}
 \alias{mixed.default}
 \alias{print.mixed}
 \alias{summary.mixed}
@@ -15,8 +17,6 @@ mixed(y, x, p_C, p_NC)
 \method{print}{mixed}(x, ...)
 
 \method{summary}{mixed}(object, ...)
-
-\method{mixed}{combine}(y, x, p_C, p_NC)
 }
 \arguments{
 \item{y}{Data vector of time series observations.}
@@ -43,6 +43,8 @@ An object of class \code{"mixed"} is a list containing the following components:
 \item{residuals}{Residuals.}
 
 \item{fitted.values}{Fitted values.}
+
+\item{order}{Vector containing (r,s,q), i.e. causal order r, noncausal order s, number of exogenous regressors q.}
 }
 \description{
 This function allows you to estimate mixed causal-noncausal MARX models by t-MLE (compatible with most functions in lm() class).
@@ -55,4 +57,3 @@ summary(object)
 }
 \keyword{causal-noncausal}
 \keyword{estimation}
-

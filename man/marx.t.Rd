@@ -31,12 +31,14 @@ marx.t(y, x, p_C, p_NC, params0)
 \item{df}{Estimated degrees of freedom.}
 
 \item{residuals}{Residuals.}
+
+\item{se.dist}{Standard errors of the distributional parameters.}
 }
 \description{
 This function allows you to estimate the MARX model by t-MLE.
 }
 \examples{
-data <- sim.marx(c('t',3,0),c('t',3,1),100,0.5,0.4,0.3)
+data <- sim.marx(c('t',3,1),c('t',3,1),100,0.5,0.4,0.3)
 marx.t(data$y,data$x,1,1)
 }
 \author{
@@ -44,4 +46,3 @@ Sean Telg
 }
 \keyword{causal-noncausal}
 \keyword{estimation}
-

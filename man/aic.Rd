@@ -29,4 +29,3 @@ aic(data$y, data$x,8)
 Sean Telg
 }
 \keyword{selection}
-
